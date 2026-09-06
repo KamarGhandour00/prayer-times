@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adhan App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="eyebrow">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+      <h2>Prayer Times <span>🕌</span></h2>
+      <p class="intro">A gentle reminder to pause, pray, and reconnect.</p>
+      <div class="inputs">
+        <input type="text" id="date" placeholder="DD-MM-YYYY" />
+        <input type="text" id="city" placeholder="City" />
+        <input type="text" id="country" placeholder="Country code (e.g. GB)" />
+        <button onclick="fetchApi()">Get Times</button>
+        <button onclick="fetchNextPrayers()">Next Prayers</button>
+      </div>
+      <div class="quote">
+        <div class="quote-mark">“</div>
+        <p id="quote-text">Indeed, in the remembrance of Allah do hearts find rest.</p>
+        <span id="quote-source">Qur'an 13:28</span>
+      </div>
+      <div id="result"></div>
+      <div id="next-prayers"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>   
